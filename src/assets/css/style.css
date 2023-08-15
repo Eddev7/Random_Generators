@@ -22,7 +22,11 @@ body {
     display: grid;
     grid-template-columns: 1fr 4fr;
     width: 100%;
-    height: 87vh;
+    height: 100vh;
+}
+
+.container-principal aside {
+    border: black solid 2px;
 }
 
 .container-principal aside ul {
@@ -30,7 +34,7 @@ body {
     flex-direction: column;
 }
 
-.container-principal aside ul li a {
+.link {
     display: block;
     text-align: center;
     text-decoration: none;
@@ -42,15 +46,18 @@ body {
     letter-spacing: 2px;
     width: 100%;
     padding: 20px;
-    border: var(--white-color) solid 3px;
 }
 
-.container-principal aside ul li a:hover {
+.link:hover {
     background-color: var(--primary-color);
-    border: rgba(0, 0, 0, 0.753) solid 3px;
     cursor: pointer;
 }
 
+.clicado {
+    background-color: var(--primary-color);
+}
+
 .coitaner-function {
-    background-color: rgb(38, 0, 255);
+    display: flex;
+    justify-content: center;
 }

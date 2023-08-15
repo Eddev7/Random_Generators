@@ -1,0 +1,41 @@
+.container-CPF {
+    background-color: var(--primary-color);
+    width: 640px;
+    height: 50%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: black solid 3px;
+    border-radius: 20px;
+    color: var(--white-color);
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 5px;
+}
+
+.container-CPF h1 {
+    font-size: 3rem;
+}
+
+.CPF {
+    font-size: 2rem;
+}
+
+.gerador {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: var(--white-color);
+    border: black solid 2px;
+    border-radius: 10px;
+}
+
+.gerador:hover {
+    margin-top: 10px;
+    padding: 10px;
+    border: black solid 2px;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+}
