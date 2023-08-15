@@ -30,7 +30,11 @@ body {
     flex-direction: column;
 }
 
-.container-principal aside ul li button {
+.container-principal aside ul li a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: black;
     font-family: 'Patua One', cursive;
     font-family: 'Staatliches', cursive;
     background-color: var(--white-color);
@@ -41,7 +45,7 @@ body {
     border: var(--white-color) solid 3px;
 }
 
-.container-principal aside ul li button:hover {
+.container-principal aside ul li a:hover {
     background-color: var(--primary-color);
     border: rgba(0, 0, 0, 0.753) solid 3px;
     cursor: pointer;
