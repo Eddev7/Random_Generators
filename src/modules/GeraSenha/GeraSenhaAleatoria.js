@@ -1,4 +1,4 @@
-import {radmin, radman, radsimbol, rand} from './GeraCaracteres';
+import { radmin, radman, radsimbol, rand } from './GeraCaracteres';
 
 export default class CriaSenha {
     constructor() {
@@ -27,24 +27,30 @@ export default class CriaSenha {
 
     geraSenha() {
         let senha = '';
-        for(let i=0;i<this.numC;i++) {
-            if(this.min.checked) {
-                if (senha.length == this.numC) break;
-                senha += String(radmin());
+        if (this.min.checked || this.man.checked || this.num.checked || this.simbol.checked) {
+            for (let i = 0; i < this.numC; i++) {
+                if (this.min.checked) {
+                    if (senha.length == this.numC) break;
+                    senha += String(radmin());
+                }
+                if (this.man.checked) {
+                    if (senha.length == this.numC) break;
+                    senha += String(radman());
+                }
+                if (this.num.checked) {
+                    if (senha.length == this.numC) break;
+                    senha += String(rand());
+                }
+                if (this.simbol.checked) {
+                    if (senha.length == this.numC) break;
+                    senha += String(radsimbol());
+                }
+                this.display.classList.add('senha-font');
+                this.display.innerHTML = senha;
             }
-            if(this.man.checked) {
-                if (senha.length == this.numC) break;
-                senha += String(radman());
-            }
-            if(this.num.checked) {
-                if (senha.length == this.numC) break;
-                senha += String(rand());
-            }
-            if(this.simbol.checked) {
-                if (senha.length == this.numC) break;
-                senha += String(radsimbol());
-            }
+        } else {
+            this.display.classList.remove('senha-font');
+            this.display.innerHTML = 'Selecione alguma checkbox';
         }
-        this.display.innerHTML = senha;
     }
 }

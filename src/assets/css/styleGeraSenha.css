@@ -1,0 +1,47 @@
+.container-Senha {
+    background-color: var(--primary-color);
+    width: 640px;
+    height: 50%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: black solid 3px;
+    border-radius: 20px;
+    color: var(--white-color);
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 5px;
+}
+
+.container-Senha h1 {
+    font-size: 3rem;
+}
+
+.container-Senha .senha {
+    font-size: 2rem;
+    margin: 10px;
+}
+
+.senha-font {
+    font-family: sans-serif;
+    letter-spacing: 2px;
+}
+
+.gen-senha {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: var(--white-color);
+    border: black solid 2px;
+    border-radius: 10px;
+}
+
+.gen-senha:hover {
+    margin-top: 10px;
+    padding: 10px;
+    border: black solid 2px;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+}

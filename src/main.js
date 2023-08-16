@@ -1,7 +1,9 @@
 import './assets/css/variaveis.css'
 import './assets/css/style.css';
 import './assets/css/styleGeraCpf.css'
+import './assets/css/styleGeraSenha.css'
 import GeraCpf from './modules/GeraCPF/GeraCPF';
+import GeraSenha from './modules/GeraSenha/GeraSenhaAleatoria'
 
 const request = obj => {
     const xhr = new XMLHttpRequest();
@@ -33,6 +35,10 @@ document.addEventListener('click', e => {
     }
     if (el.classList.contains('gerador')) {
         const novoGeradorCPF = new GeraCpf();
+    }
+    if (el.classList.contains('gen-senha')) {
+        const novoGeradorSenha = new GeraSenha();
+        const senha = document.querySelector('.senha');
     }
 })
 
